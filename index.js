@@ -1,10 +1,10 @@
-function input(){
-    console.log("clicked")
-}
-
-let inputBtn = document.getElementById("input-btn")
+let myLeads = []
+ 
+const inputBtn = document.getElementById("input-btn")
+const inputEL = document.getElementById("input-el")
 
 inputBtn.addEventListener("click", function(){
-    console.log("Button clicked from addEventListener")
+   myLeads.push("www.awesomelead.com")
+   console.log(myLeads)
 })
- 
+  
