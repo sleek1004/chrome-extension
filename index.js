@@ -6,12 +6,25 @@ const ulEL = document.getElementById("ul-el")
 
 
 
+//let myName = localStorage.getItem("myName")
+//console.log(myName)
+//localStorage.clear()
+
+
+
+
+
+
 inputBtn.addEventListener("click", function(){
    myLeads.push(inputEL.value)
    inputEL.value = " "
-   console.log(myLeads)
+   
+   localStorage.setItem("myLeads", JSON.stringify(myLeads)) 
+
+
    
    renderLeads()
+   console.log(localStorage.getItem("myLeads"))
 })
 
 
